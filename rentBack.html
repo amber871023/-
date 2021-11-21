@@ -16,28 +16,51 @@
 </head>
 
 <body class="bg-dark">
+  <div class="wrapper">
   <nav class="navbar navbar-light">
-    <div class="container-fluid">
       <h1><a href="./index.html" class="smallLogo navbar-brand ">Urban Chaser</a></h1>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
+      <div class="input-group" style="width: 500px;">
+        <input type="search" class="form-control" placeholder="Search" aria-label="aria-label="Search">
+        <button class="btn btn-primary" type="button" id="button-addon2">
+          <span class="material-icons d-flex align-items-center">
+            my_location
+            </span>            
+        </button>
+      </div>
   </nav>
 
-<div class="container-fluid content">
-  <div></div>
-</div>
-
-
-</div>
-<!--Footer-->
-<footer class="bg-primary text-center d-flex align-items-center">
-  <div class="container">
-    <p class="mb-0">#The F2E Week02 #Design by Breafast | #Code by AmberCYT</p>
+<div class="container-fluid content p-0">
+  <div class="row g-0">
+    <div class="col-6 bg-light">
+      <div class="col-12  d-flex justify-content-start  bg-primary">
+        <ul class="nav nav-pills fw-bold">
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="#">自行車租還</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">自行車道</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">餐廳美食</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">觀光景點</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12">
+        
+      </div>
+    </div>
+    <div class="col-6">
+      <div id="map" style="height: 640px;"></div>
+    </div>
   </div>
-</footer>
+</div>
+
+
+</div>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" charset="utf-8"></script>

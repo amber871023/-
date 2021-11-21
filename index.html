@@ -16,7 +16,7 @@
 </head>
 
 <body class="bg-dark">
-<div class="container-fluid content pe-0">
+<div class="container-fluid content pe-0" style="margin-top: 104px;"> 
   <div class="row">
     <div class="col-6">
       <h1><a href="./index.html" class="logo navbar-brand ">Urban Chaser</a></h1>
@@ -39,7 +39,14 @@
                 <option value="2">Two</option>
                 <option value="3">Three</option>
               </select>
-              <input class="form-control mb-1" type="text" placeholder="請輸入地址或關鍵字" aria-label="default input example">
+              <div class="input-group mb-1">
+                <input type="search" class="form-control" placeholder="請輸入地址或關鍵字" aria-label="aria-label="Search">
+                <button class="btn btn-light" type="button" id="button-addon2">
+                  <span class="material-icons d-flex align-items-center">
+                    my_location
+                    </span>            
+                </button>
+              </div>
               <button type="button" class="btn btn-primary w-100 fw-bold d-flex justify-content-center">
                 查詢周邊資訊</button>
           </div>
