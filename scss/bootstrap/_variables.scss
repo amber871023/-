@@ -68,9 +68,9 @@ $colors: (
 
 // scss-docs-start theme-color-variables
 $primary: #dadd3e; //$blue !default;
-$secondary: #ab99e6; //$gray-600 !default;
+$secondary: #5631c9; //$gray-600 !default;
 $success: $green !default;
-$info: $cyan !default;
+$info: #AB99E6; //$cyan !default;
 $warning: #dd8a3e; //$yellow !default;
 $danger: #dd3e3e; //$red !default;
 $light: #eeeff1; //$gray-100 !default;
@@ -964,8 +964,8 @@ $form-check-input-focus-border: $input-focus-border-color !default;
 $form-check-input-focus-box-shadow: $input-btn-focus-box-shadow !default;
 
 $form-check-input-checked-color: $component-active-color !default;
-$form-check-input-checked-bg-color: $component-active-bg !default;
-$form-check-input-checked-border-color: $form-check-input-checked-bg-color !default;
+$form-check-input-checked-bg-color: $dark; //$component-active-bg !default;
+$form-check-input-checked-border-color: $dark; //$form-check-input-checked-bg-color !default;
 $form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path fill='none' stroke='#{$form-check-input-checked-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/></svg>") !default;
 $form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='#{$form-check-input-checked-color}'/></svg>") !default;
 

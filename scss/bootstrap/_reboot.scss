@@ -604,18 +604,3 @@ progress {
 [hidden] {
   display: none !important;
 }
-
-html {
-  height: 100%;
-}
-body {
-  margin: 0;
-  min-height: 100%;
-  display: grid; /*使用grid排版*/
-  grid-template-rows: 1fr auto; /*將上半部設置為一個單位，剩下的部分設為自動高度*/
-}
-footer {
-  height: 40px;
-  grid-row-start: 2; /*欄位從第二條橫線開始*/
-  grid-row-end: 3; /*欄位從第三條橫線結束*/
-}
