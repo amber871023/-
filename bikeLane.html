@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban Chaser</title>
+  <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
   <link rel="stylesheet" href="./css/all.css">
   <!--Material icons-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -29,34 +30,141 @@
       </div>
   </nav>
 
-<div class="container-fluid content p-0">
-  <div class="row g-0">
-    <div class="col-6 bg-light">
-      <div class="col-12 d-flex justify-content-start bg-primary">
-        <ul class="nav nav-pills fw-bold my-5 ms-8">
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="rentBack.html">自行車租還</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-dark" href="bikeLane.html">自行車道</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="food.html">餐廳美食</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="spots.html">觀光景點</a>
-          </li>
-        </ul>
+  <div class="container-fluid content p-0">
+    <div class="row g-0">
+      <div class="col-12 col-md-6 bg-light">
+      <!--inner Navbar-->
+        <div class="row mb-7 mx-0">
+          <div class="col-12 d-flex justify-content-start bg-primary">
+            <ul class="nav nav-pills fw-bold my-5 ms-8">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="rentBack.html">自行車租還</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-dark" href="bikeLane.html">自行車道</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="food.html">餐廳美食</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="spots.html">觀光景點</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <!--篩選區-->
+      <div class="row mb-3 ms-8">
+        <div class="col-6 px-0">
+          <div class="filter">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">單向</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">雙向</label>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-center">
+          <div class="info d-flex">
+            <div class="bike me-5">
+              <img src="./assets/cycling-start.png" alt="路線起點描述icon">
+              <span>路線起點描述</span>
+            </div>
+            <div class="park">
+              <img src="./assets/cycling-end.png" alt="路線迄點描述icon">
+              <span>路線迄點描述</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-12">
-        
+      <!--卡片區-->
+        <div class="row g-4 overflow-auto" style="height:514px;">
+          <div class="col-12 d-flex justify-content-center">
+            <div class="card" style="width: 90%;">
+              <div class="card-body">
+                <div class="d-flex">
+                  <h5 class="card-title fw-bold mb-0 me-1">捷運淡水線之線型公園</h5>
+                  <span class="badge rounded-pill bg-gray text-white fs-2 px-2 py-1">雙向</span>
+                </div>
+                <div class="d-flex justify-content-between mb-5"> 
+                  <p class="text-info d-flex justify-content-center mb-0">
+                    <span class="material-icons text-info">
+                    place
+                    </span> 距離 0.2 公里 - <span class="text-muted"> 市府路/信義路(西北側)</span></p>
+                </div>
+                <span>全長：1.05 公里</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <div class="card" style="width: 90%;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">YouBike2.0_捷運台北101/世貿站(5號出口)</h5>
+                <div class="d-flex justify-content-between mb-5"> 
+                  <p class="text-info d-flex justify-content-center mb-0">
+                    <span class="material-icons text-info">
+                    place
+                    </span> 距離 0.2 公里 - <span class="text-muted"> 市府路/信義路(西北側)</span></p>
+                </div>
+                <div class="info d-flex mb-3">
+                  <div class="bike me-5">
+                    <img src="./assets/bike.png" alt="可租車輛icon">
+                    <span class="text-secondary">3</span>
+                  </div>
+                  <div class="park">
+                    <img src="./assets/park.png" alt="可租車輛icon">
+                    <span class="text-secondary">15</span>
+                  </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-warning text-white fs-2 px-2 py-1">暫停營運</span>
+                <small class="text-muted">更新時間 : 2021-11-11 22:00:00</small>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-center">
+            <div class="card" style="width: 90%;">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">YouBike2.0_捷運台北101/世貿站(5號出口)</h5>
+                <div class="d-flex justify-content-between mb-5"> 
+                  <p class="text-info d-flex justify-content-center mb-0">
+                    <span class="material-icons text-info">
+                    place
+                    </span> 距離 0.2 公里 - <span class="text-muted"> 市府路/信義路(西北側)</span></p>
+                </div>
+                <div class="info d-flex mb-3">
+                  <div class="bike me-5">
+                    <img src="./assets/bike.png" alt="可租車輛icon">
+                    <span class="text-muted">0</span>
+                  </div>
+                  <div class="park">
+                    <img src="./assets/park.png" alt="可租車輛icon">
+                    <span class="text-secondary">15</span>
+                  </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span class="badge rounded-pill bg-danger text-white fs-2 px-2 py-1">停止營運
+                </span>
+                <small class="text-muted">更新時間 : 2021-11-11 22:00:00</small>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>   
+      </div>
+  <!--地圖-->
+      <div class="col-12 col-md-6">
+        <div id="map" style="height: 650px;"></div>
       </div>
     </div>
-    <div class="col-6">
-      <div id="map" style="height: 640px;"></div>
-    </div>
+  
+    
+  
+  
   </div>
-</div>
 </div>
 
 

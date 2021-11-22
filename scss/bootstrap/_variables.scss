@@ -70,7 +70,7 @@ $colors: (
 $primary: #dadd3e; //$blue !default;
 $secondary: #5631c9; //$gray-600 !default;
 $success: $green !default;
-$info: #AB99E6; //$cyan !default;
+$info: #ab99e6; //$cyan !default;
 $warning: #dd8a3e; //$yellow !default;
 $danger: #dd3e3e; //$red !default;
 $light: #eeeff1; //$gray-100 !default;
@@ -87,6 +87,7 @@ $theme-colors: (
   "danger": $danger,
   "light": $light,
   "dark": $dark,
+  "gray": $gray-600,
 ) !default;
 // scss-docs-end theme-colors-map
 
