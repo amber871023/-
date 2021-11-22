@@ -16,55 +16,57 @@
 </head>
 
 <body class="bg-dark">
-<div class="container-fluid content pe-0" style="margin-top: 104px;"> 
-  <div class="row">
-    <div class="col-6">
-      <h1><a href="./index.html" class="logo navbar-brand ">Urban Chaser</a></h1>
-      <div class="row justify-content-center">
-        <ul class="nav d-flex justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="rentBack.html">自行車租還站點</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">自行車道查詢</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">周邊美食景點</a>
-          </li>
-        </ul>
-          <div class="col-6">
-              <select class="form-select mb-1" aria-label="Default select example">
-                <option selected>選擇縣市</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <div class="input-group mb-1">
-                <input type="search" class="form-control" placeholder="請輸入地址或關鍵字" aria-label="aria-label="Search">
-                <button class="btn btn-light" type="button" id="button-addon2">
-                  <span class="material-icons d-flex align-items-center">
-                    my_location
-                    </span>            
-                </button>
+  <div class="content ">
+    <div class="container-fluid pe-0 d-flex justify-content-end position-relative"> 
+        <div class="bannerImg d-flex justify-content-end position-absolute" style="z-index:10"></div>
+          <div class="row position-absolute mt-9" style="z-index:20; left:0;">
+            <div class="col-12 order-1 order-md-0">
+              <h1><a href="./index.html" class="logo navbar-brand ">Urban Chaser</a></h1>
+              <div class="row justify-content-center">
+                <ul class="nav d-flex justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="rentBack.html">自行車租還站點</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">自行車道查詢</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">周邊美食景點</a>
+                  </li>
+                </ul>
+                  <div class="col-11 col-md-8 d-flex flex-column justift-content-center">
+                      <select class="form-select mb-3" aria-label="Default select example">
+                        <option selected>選擇縣市</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <div class="input-group mb-3">
+                        <input type="search" class="form-control" placeholder="請輸入地址或關鍵字" aria-label="aria-label="Search">
+                        <button class="btn btn-light" type="button" id="button-addon2">
+                          <span class="material-icons d-flex align-items-center">
+                            my_location
+                            </span>            
+                        </button>
+                      </div>
+                      <button type="button" class="btn btn-primary w-100 fs-5 fw-bold d-flex justify-content-center">
+                        查詢周邊資訊</button>
+                  </div>
               </div>
-              <button type="button" class="btn btn-primary w-100 fw-bold d-flex justify-content-center">
-                查詢周邊資訊</button>
+            </div>
           </div>
+        </div>
       </div>
     </div>
-        <div class="col-6">
-          <div class="bannerImg"></div>
-        </div>
-    </div>
-  </div>
-</div>
+
+
 
 
 </div>
 <!--Footer-->
-<footer class="bg-primary text-center d-flex align-items-center">
+<footer class="bg-primary text-center d-flex align-items-center fixed-bottom">
   <div class="container">
-    <p class="mb-0">#The F2E Week02 #Design by Breafast | #Code by AmberCYT</p>
+    <p class="fs-2 mb-0">#The F2E Week02 #Design by Breafast | #Code by AmberCYT</p>
   </div>
 </footer>
 

@@ -8,12 +8,12 @@
   white-space: nowrap;
   @include mobile() {
     display: block;
-    background: no-repeat center url(../assets/logo-mobile.jpg);
+    background: no-repeat center url(../assets/logo-mobile.png);
     padding: 0;
   }
 }
 
-.smallLogo {
+.navLogo {
   display: block;
   background: no-repeat center url(../assets/logo-ls.png);
   width: 100%;
@@ -21,6 +21,11 @@
   text-indent: 110%;
   overflow: hidden;
   white-space: nowrap;
+  @include mobile() {
+    display: block;
+    background: no-repeat center url(../assets/logo-s.png);
+    padding: 0;
+  }
 }
 
 .bannerImg {
@@ -33,10 +38,15 @@
   overflow: hidden;
   white-space: nowrap;
   height: 481px;
-  width: 923px;
+  width: 72%;
+  margin-top: 104px;
   @include mobile() {
     background: no-repeat center url(../assets/banner-mobile.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     height: 135px;
     width: 100%;
+    margin-top: 20px;
   }
 }

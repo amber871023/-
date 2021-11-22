@@ -76,7 +76,6 @@
   }
 }
 
-
 //
 // Pills
 //
@@ -90,11 +89,29 @@
 
   .nav-link.active,
   .show > .nav-link {
-    color: $nav-pills-link-active-color;
-    @include gradient-bg($nav-pills-link-active-bg);
+    //color: $nav-pills-link-active-color;
+    //@include gradient-bg($nav-pills-link-active-bg);
+    background-color: $dark;
+    color: #fff !important;
+    position: relative;
+    background: #1f1f1f;
+    border-radius: 0.4em;
+  }
+
+  .nav-link.active:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-top-color: #1f1f1f;
+    border-bottom: 0;
+    margin-left: -9px;
+    margin-bottom: -9px;
   }
 }
-
 
 //
 // Justified variants
@@ -123,7 +140,6 @@
     width: 100%; // Make sure button will grow
   }
 }
-
 
 // Tabbable tabs
 //
